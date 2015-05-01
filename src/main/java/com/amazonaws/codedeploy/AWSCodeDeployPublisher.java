@@ -71,9 +71,9 @@ import javax.servlet.ServletException;
  * credentials to be configured for each project.
  */
 public class AWSCodeDeployPublisher extends Publisher {
-    public static final String    POLLING_TIMEOUT_KEY               = "pollingTimeoutSec";
-    public static final String    POLLING_FREQ_KEY                  = "pollingFreqSec";
-    public static final long      DEFAULT_TIMEOUT_SECONDS           = 900;
+    public static final String    POLLING_TIMEOUT_KEY               = "pollingTimeout";
+    public static final String    POLLING_FREQ_KEY                  = "pollingFreq";
+    public static final long      DEFAULT_TIMEOUT_SECONDS           = 1400;
     public static final long      DEFAULT_POLLING_FREQUENCY_SECONDS = 15;
     public static final String    ROLE_SESSION_NAME                 = "jenkins-codedeploy-plugin";
     public static final Regions[] AVAILABLE_REGIONS                 = {Regions.US_EAST_1, Regions.US_WEST_2};
